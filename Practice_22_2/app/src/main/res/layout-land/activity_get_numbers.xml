@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GetNumbersActivity"
+    android:background="@drawable/background_numbers">
+
+    <EditText
+        android:id="@+id/numberEditText"
+        android:layout_width="265dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="44dp"
+        android:autofillHints=""
+        android:hint="@string/enter_number"
+        android:inputType="numberDecimal"
+        android:maxLines="1"
+        android:textAlignment="center"
+        android:textColor="@color/grey"
+        android:textColorHint="@color/th_white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.081"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/getFactButton"
+        android:layout_width="233dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/button"
+        android:text="@string/get_fact"
+        android:textColor="@color/th_white"
+        app:layout_constraintBottom_toTopOf="@+id/getHistory"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.11"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/getHistory"
+        android:layout_width="233dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="72dp"
+        android:background="@drawable/button"
+        android:text="@string/history_facts"
+        android:textColor="@color/th_white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.11"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/factTextView"
+        style="@style/WhiteTextWithBlackOutline"
+        android:layout_width="336dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:background="@drawable/textview_background"
+        android:minHeight="91dp"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:paddingBottom="16dp"
+        android:text="@string/enter_the_num_and_get_fact"
+        android:textAlignment="center"
+        android:textColor="@color/th_white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.663"
+        app:layout_constraintStart_toEndOf="@+id/numberEditText"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="TextWithOutline">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">#02273f</item> <!-- Цвет текста -->
+        <item name="android:shadowColor">#FFFFFF</item> <!-- Цвет обводки (белый) -->
+        <item name="android:shadowDx">0</item> <!-- Горизонтальное смещение обводки -->
+        <item name="android:shadowDy">0</item> <!-- Вертикальное смещение обводки -->
+        <item name="android:shadowRadius">10</item> <!-- Размер обводки -->
+    </style>
+</resources>

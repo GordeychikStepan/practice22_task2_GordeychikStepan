@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">InterestingNumbers</string>
+    <string name="welcome">Добро пожаловать в NUMBERS-API!</string>
+    <string name="login">Войти</string>
+    <string name="name">Логин</string>
+    <string name="enter_number">Введите число</string>
+    <string name="get_fact">Получить факт</string>
+    <string name="history_facts">История фактов</string>
+    <string name="clear_facts">Очистить историю</string>
+    <string name="delete_ex">✕</string>
+    <string name="fact">Факт:</string>
+    <string name="last_ten_facts">Последние 10 фактов:</string>
+    <string name="description_api">API для интересных фактов о числах</string>
+    <string name="enter_the_num_and_get_fact">Введите число и узнайте интересный факт о нем!</string>
+    <string name="register">Регистрация</string>
+    <string name="password">Пароль</string>
+    <string name="to_register">Зарегистрироваться</string>
+    <string name="add_fact">Добавить факт</string>
+</resources>

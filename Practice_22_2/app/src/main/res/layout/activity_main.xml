@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/background_numbers">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/welcome"
+        android:textAlignment="center"
+        android:textSize="27sp"
+        android:textStyle="bold"
+        style="@style/TextWithOutline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="352dp"
+        android:layout_height="26dp"
+        android:text="@string/description_api"
+        android:textAlignment="center"
+        android:textColor="@color/th_white"
+        android:textSize="17sp"
+        android:textStyle="italic"
+        android:typeface="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <EditText
+        android:id="@+id/usernameEditText"
+        android:layout_width="289dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="8dp"
+        android:autofillHints=""
+        android:gravity="center_horizontal"
+        android:background="@drawable/textview_background"
+        android:padding="8dp"
+        android:hint="@string/name"
+        android:inputType="text"
+        android:textSize="20sp"
+        android:maxLines="1"
+        android:textColor="@color/grey"
+        android:textColorHint="@color/th_white"
+        app:layout_constraintBottom_toTopOf="@+id/passwordEditText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/passwordEditText"
+        android:layout_width="289dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="44dp"
+        android:autofillHints=""
+        android:gravity="center_horizontal"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:textSize="20sp"
+        android:background="@drawable/textview_background"
+        android:padding="8dp"
+        android:maxLines="1"
+        android:textColor="@color/grey"
+        android:textColorHint="@color/th_white"
+        app:layout_constraintBottom_toTopOf="@+id/loginButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="TextFields" />
+
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="211dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="12dp"
+        android:background="@drawable/button"
+        android:text="@string/login"
+        android:textColor="@color/th_white"
+        app:layout_constraintBottom_toTopOf="@+id/registerButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/registerButton"
+        android:layout_width="211dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/button"
+        android:text="@string/register"
+        android:textColor="@color/th_white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:layout_width="289dp"
+        android:layout_height="128dp"
+        android:layout_marginTop="20dp"
+        android:antialias="true"
+        android:background="@drawable/image_png"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_numbers"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    tools:context=".HistoryActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/returnImageButton"
+                android:layout_width="50dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="26dp"
+                android:clickable="true"
+                android:background="@drawable/small_button"
+                app:srcCompat="@android:drawable/ic_menu_revert" />
+
+            <Button
+                android:layout_marginTop="26dp"
+                android:id="@+id/deleteButton"
+                android:layout_width="200dp"
+                android:layout_marginStart="200dp"
+                android:layout_height="35dp"
+                android:textAllCaps="false"
+                android:background="@drawable/button"
+                android:textColor="@color/th_white"
+                android:text="@string/clear_facts" />
+
+            <Button
+                android:layout_marginTop="26dp"
+                android:id="@+id/addButton"
+                android:layout_width="200dp"
+                android:layout_marginStart="20dp"
+                android:layout_height="35dp"
+                android:textAllCaps="false"
+                android:background="@drawable/button"
+                android:textColor="@color/th_white"
+                android:text="@string/add_fact" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="323dp"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:padding="8dp"
+        android:text="@string/last_ten_facts"
+        android:textColor="@color/th_white"
+        android:textSize="16sp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:listitem="@layout/item_fact" />
+
+</LinearLayout>
